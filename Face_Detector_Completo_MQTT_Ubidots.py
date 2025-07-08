@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
 # Configurações MQTT Ubidots
-UBIDOTS_TOKEN = "BBUS-BJyEHDkEKc4IqGOh7FzBmEVfwXU5gS"
+UBIDOTS_TOKEN = "-------------------------------" #Your Token Ubidots
 MQTT_BROKER = "industrial.api.ubidots.com"
 MQTT_PORT = 1883
 MQTT_CLIENT_ID = "facial-controller"
