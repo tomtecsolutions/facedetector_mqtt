@@ -55,7 +55,7 @@ controle-gestos-raspberry/
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/controle-gestos-raspberry.git
+git clone https://github.com/tomtecsolutions/facedetector_mqtt.git
 cd controle-gestos-raspberry
 ```
 
@@ -108,7 +108,7 @@ A comunicação entre Raspberry Pi e ESP32 é feita via **Ubidots MQTT**:
 
 ## 🤝 Créditos
 
-Desenvolvido por [Seu Nome](https://www.linkedin.com/in/seu-usuario) como projeto de automação com foco em acessibilidade e visão computacional.
+Desenvolvido por [Wellington Dorta](https://www.linkedin.com/in/wellingtondorta) como projeto de automação com foco em acessibilidade e visão computacional.
 
 ---
 
