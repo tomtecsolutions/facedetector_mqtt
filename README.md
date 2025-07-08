@@ -48,20 +48,26 @@ Facilitar o controle de dispositivos elétricos por meio de gestos faciais, prom
 
 ## 📂 Estrutura do Projeto
 
-```
-controle-gestos-raspberry/
-│
-├── raspberry/
-│   └── facedetector_mqtt.py       # Script principal com visão computacional
-│
-├── esp32/
-│   └── main_esp32.ino             # Código do ESP32 com MQTT + leitura DHT22
-│
-├── requirements.txt               # Dependências Python
-└── README.md                      # Este arquivo
-```
-
+| Arquivo                                  | Descrição                                                       |
+|------------------------------------------|-----------------------------------------------------------------|
+| `Face_Detector_Completo_MQTT_Ubidots.py`| Script principal de visão computacional (Raspberry Pi)          |
+| `ESP32_Ubidots_Multitask.ino`           | Código do ESP32 com multitarefas e MQTT                         |
+| `2025-06-25_112050.jpg`                 | Esquema Raspberry Pi + Câmera                                   |
+| `FB_ESP32_AppInventor_bb.jpg`           | Esquema ESP32 + Relés + Sensor DHT22                            |
+| `README.md`                             | Documentação do projeto                                         |
 ---
+
+## 🔌 Código ESP32 - Multitarefas com FreeRTOS
+
+O arquivo `ESP32_Ubidots_Multitask.ino` contém:
+
+- Leitura periódica da **temperatura** e **umidade** via DHT22.
+- Controle de **4 relés** via tópicos MQTT.
+- Envio dos **estados dos relés** a cada ciclo.
+- Utiliza **duas tarefas FreeRTOS**:
+  - `loopSensor` → Envia dados do sensor a cada 5 segundos.
+  - `loopMQTT` → Mantém a conexão e envia feedback dos relés.
+
 
 ## 🚀 Como Executar
 
