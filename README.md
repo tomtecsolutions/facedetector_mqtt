@@ -1,7 +1,7 @@
 
 # 🧠 Controle de Dispositivos por Gestos Faciais com Raspberry Pi + ESP32
 
-Este projeto propõe uma solução inclusiva e acessível baseada em **visão computacional**, permitindo o **acionamento de relés com gestos faciais** (como sorriso, piscar e levantar sobrancelhas), usando um **Raspberry Pi 4 com câmera** e um **ESP32 conectado via MQTT (Ubidots)**.
+Este projeto propõe uma solução inclusiva e acessível baseada em **visão computacional**, permitindo o **acionamento de relés com gestos faciais** (como sorriso, piscar e levantar sobrancelhas), usando um **Raspberry Pi 4 com uma web cam Logitech C270HD** e um **ESP32 conectado via MQTT (Ubidots)**.
 
 ## 📌 Objetivo
 
@@ -19,6 +19,18 @@ Facilitar o controle de dispositivos elétricos por meio de gestos faciais, prom
 - **DHT22** para leitura de temperatura e umidade
 
 ---
+
+### 🔷 Esquema Raspberry Pi + Câmera
+
+![Raspberry Pi + Câmera Logitech](./2025-06-25_112050.jpg)
+
+> Conexão entre Raspberry Pi 4, câmera USB e sistema de controle facial para envio de comandos via MQTT.
+
+### 🔷 Esquema ESP32 + Sensor + Relés
+
+![ESP32 + AppInventor + Relés](./FB_ESP32_AppInventor_bb.jpg)
+
+> Diagrama de ligação do ESP32 com sensor DHT22 e relés, usando MQTT para receber comandos e enviar medições.
 
 ## 🧠 Funcionalidades
 
